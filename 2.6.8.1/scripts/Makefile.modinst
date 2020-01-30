@@ -1,0 +1,25 @@
+# ==========================================================================
+# Installing modules
+# ==========================================================================
+
+.PHONY: __modinst
+__modinst:
+
+include scripts/Makefile.lib
+
+#
+
+__modules := $(sort $(shell head -q -n1 /dev/null $(wildcard $(MODVERDIR)/*.mod)))
+modules := $(patsubst %.o,%.ko,$(wildcard $(__modules:.ko=.o)))
+
+.PHONY: $(modules)
+__modinst: $(modules)
+	@:
+
+quiet_cmd_modules_install = INSTALL $@
+      cmd_modules_install = mkdir -p $(2); cp $@ $(2)
+
+modinst_dir = $(MODLIB)/$(if $(filter ../% /%,$@),extra/,kernel/$(@D))
+
+$(modules):
+	$(call cmd,modules_install,$(modinst_dir))

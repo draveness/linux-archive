@@ -1,0 +1,63 @@
+Linux* Base Driver for the Intel(R) PRO/100 Family of Adapters
+==============================================================
+
+March 15, 2004
+
+
+Contents
+========
+
+- In This Release
+- Supported Adapters
+- Support
+
+
+In This Release
+===============
+
+This file describes the Linux* Base Driver for the Intel(R) PRO/100 Family of
+Adapters, version 3.x.x.  This driver includes support for Itanium(TM)-based 
+systems.
+
+
+Supported Adapters
+==================
+
+To verify that your adapter is supported, find the board ID number on the 
+adapter. Look for a label that has a barcode and a number in the format 
+A12345-001. Match this to the list of numbers above.
+
+For more information on how to identify your adapter, go to the Adapter & 
+Driver ID Guide at:
+
+  http://support.intel.com/support/network/adapter/pro100/21397.htm
+
+For the latest Intel PRO/100 network driver for Linux, see:
+
+  http://downloadfinder.intel.com/scripts-df/support_intel.asp
+
+
+Support
+=======
+
+For general information, go to the Intel support website at:
+
+    http://support.intel.com
+
+If an issue is identified with the released source code on the supported
+kernel with a supported adapter, email the specific information related to 
+the issue to linux.nics@intel.com.
+
+
+License
+=======
+
+This software program is released under the terms of a license agreement 
+between you ('Licensee') and Intel. Do not use or load this software or any 
+associated materials (collectively, the 'Software') until you have carefully 
+read the full terms and conditions of the LICENSE located in this software 
+package. By loading or using the Software, you agree to the terms of this 
+Agreement. If you do not agree with the terms of this Agreement, do not 
+install or use the Software.
+
+* Other names and brands may be claimed as the property of others.

@@ -1,0 +1,6 @@
+# 
+# Copyright (C) 2000 Jeff Dike (jdike@karaya.com)
+# Licensed under the GPL
+#
+
+core-y		+= $(ARCH_DIR)/os-$(OS)/
